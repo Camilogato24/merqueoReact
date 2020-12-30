@@ -1,0 +1,34 @@
+@import 'variables';
+.InputEscribirEstado {
+    display: flex;
+    input {
+        width: 100%;
+        height: 46px;
+        color: $verde;
+        border: 1px solid rgb(211, 211, 155);
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        &::placeholder {
+            color: $verde;
+        }
+    }
+}
+
+.submitEscribirEstado {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: $blanco;
+    border: 1px solid rgb(193, 193, 192);
+    border-top: 0;
+    input[type="submit"] {
+        background-color: $verde;
+        color: $blanco;
+        border: none;
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 8px 30px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,74 @@
+@import 'variables';
+.estadosList {
+    >ul {
+        padding: 0;
+        >li {
+            margin: 20px 0;
+            background-color: $blanco;
+            border-radius: 4px;
+            border: 1px solid $grisBorder;
+            border-bottom: 3px solid $grisBorder;
+            .estadoContainer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                .avatarEstado {
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .bodyEstado {
+                    width: 90%;
+                    padding: 10px;
+                    .nombre {
+                        color: $verde;
+                        font-weight: 500;
+                    }
+                    small {
+                        color: $grisLetra;
+                    }
+                    .reaccionEstado {
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 12px 0;
+                        a {
+                            color: $verde;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .reaccionesContainer {
+                width: calc(100% - 40px);
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 20px;
+                border: 1px solid $grisBorder;
+                border-left: 0;
+                border-right: 0;
+                .reaccionesTotal {
+                    p {
+                        color: $verde;
+                        font-weight: 500;
+                    }
+                }
+                .comentariosTotal {
+                    color: $grisLetra;
+                }
+            }
+            .comentarioContainer {
+                width: 100%;
+                background-color: $grisBack;
+            }
+        }
+    }
+}

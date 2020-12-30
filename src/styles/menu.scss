@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    width: 100%;
+    .titulo {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .username {
+        display: flex;
+        width: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+}
